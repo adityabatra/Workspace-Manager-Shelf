@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Workspace Manager</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min (9).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    body{
+        height:500px;
+        width:450px;
+        border-radius: 3px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="workspaces">
+            <div class="card mb-3 mt-4" id="activeWorkPlace" data-no ="0">
+                <h3 class="card-header" data-no ="0" id = "headingContent0-">Current active workplace </h3>
+                
+                <div class="card-body" data-no ="0">
+                    <h5 class="card-title" data-no ="0" id = "descriptionContent0-">All your active tabs are here.</h5>
+                    <h6 class="card-subtitle text-muted" data-no ="0" id="expand" style="cursor: pointer;">Click here to expand</h6>
+                </div>
+                
+                    <div class="content0 hidden" data-no ="0" style = "display: none; transition: all 1s;">
+                    
+                    <ul class="list-group list-group-flush activeWorkplaceList0 data-no = 0">
+                        
+                        
+                    </ul>
+                    <div class="card-body" data-no ="0">
+                        
+                        <div class="form-group" data-no ="0">
+                            
+                            <input class="form-control form-control-sm mt-2" type="text" placeholder="Add your link here" data-no ="0" >
+                            <button type="button" data-no ="0" class="btn btn-primary btn-sm mt-1" id ="submit" style="cursor: pointer;">Add</button>
+                          </div>
+                    </div>
+                    <div class="card-footer text-muted" data-no ="0">
+                        <a href = "#" data-no = "0" id = "save_workspace"> Save Workspace </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            <center> <button type="button" class="btn btn-primary btn-lg" id ="addButton" data-no = 0>Add workspace</button> </center>
+    </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+    <script src="background.js"></script>
+</body>
+
+</html>

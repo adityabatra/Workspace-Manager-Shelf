@@ -1,0 +1,17 @@
+{
+    "manifest_version":3,
+    "name": "Workspace Manager",
+    "description": "Manages workspace",
+    "version":"1.0",
+    "action":{
+        "default_icon": "download.png",
+        "default_popup":"index.html"
+    },
+    "permissions":[
+        "tabs"
+    ],
+    "background":{
+        "service_worker" :"background.js"
+        //"persistent":false
+    }
+}
